@@ -1,0 +1,11 @@
+@RestController
+public class LineBotController {
+    @Autowired
+    LineBotService botService;
+
+    @RequestMapping(value = "/linebot")
+    String index(HttpServletRequest request) throws RuntimeException {
+        botService.sendToChannel(request);
+        return "OK";
+    }
+}
