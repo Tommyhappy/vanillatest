@@ -18,8 +18,7 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.google.gson.Gson;
 
 @WebServlet(name="LineServlet", urlPatterns={"/line"})
-
-public class LambdaFunctionHandler implements RequestHandler<Input, Object> {
+public class LineServlet extends HttpServlet {  
     
     private static final String CHANNEL_SECRET = "076f367d196ae98c03adc34cfdb3fb3a";
     private static final String CHANNEL_ACCESS_TOKEN = "D/Pq3PwT2g+59tNO65CQwbiPzhRw0ooDw+7FKXbvisQhDUm3xCCJZyeFHHTwfTYlDEG+XKROeda2HuTQ+R88DVvNwQ0TWicMcNKv6zRTGldeTneGs3UtlIS91gt/THMJg4+geBIEPvluQbr55wG8EwdB04t89/1O/w1cDnyilFU=";
