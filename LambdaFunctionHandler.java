@@ -35,7 +35,7 @@ public class LambdaFunctionHandler implements RequestHandler<Input, Object> {
 
         HttpPost httpPost = new HttpPost("https://api.line.me/v2/bot/message/reply");
         httpPost.setHeader("Content-Type", "application/json");
-        httpPost.setHeader("Authorization", "Bearer " + "D/Pq3PwT2g+59tNO65CQwbiPzhRw0ooDw+7FKXbvisQhDUm3xCCJZyeFHHTwfTYlDEG+XKROeda2HuTQ+R88DVvNwQ0TWicMcNKv6zRTGldeTneGs3UtlIS91gt/THMJg4+geBIEPvluQbr55wG8EwdB04t89/1O/w1cDnyilFU=");
+        httpPost.setHeader("Authorization", "Bearer " + D/Pq3PwT2g+59tNO65CQwbiPzhRw0ooDw+7FKXbvisQhDUm3xCCJZyeFHHTwfTYlDEG+XKROeda2HuTQ+R88DVvNwQ0TWicMcNKv6zRTGldeTneGs3UtlIS91gt/THMJg4+geBIEPvluQbr55wG8EwdB04t89/1O/w1cDnyilFU=);
 
         Gson gson = new Gson();
         context.getLogger().log(gson.toJson(output));
